@@ -9,10 +9,8 @@ ScrollTrigger.create({
 });
 // CODE GSAP SCROLL STORE VERTICAL
 const container = document.querySelector(".horizontal-container");
-const boxes = gsap.utils.toArray(".box");
-
 gsap.to(container, {
-  x: () => -(container.scrollWidth - window.innerWidth) + "px",
+  x: () => -(container.scrollWidth - window.innerWidth ) + "px",
   ease: "none",
   scrollTrigger: {
     trigger: ".store",
