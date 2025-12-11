@@ -9,15 +9,28 @@ ScrollTrigger.create({
 });
 // CODE GSAP SCROLL STORE VERTICAL
 const container = document.querySelector(".horizontal-container");
-gsap.to(container, {
-  x: () => -(container.scrollWidth - window.innerWidth ) + "px",
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".store",
-    start: "top top",
-    end: () => "+=" + container.scrollWidth + "px",
-    scrub: true,
-    pin: true, // تثبيت القسم أثناء التمرير
-    anticipatePin: 1,
+
+ScrollTrigger.matchMedia({
+  "(max-width: 480px)": function () {
+    createHorizontalScroll(20);
   },
+
+  "(min-width: 481px)": function () {
+    createHorizontalScroll(30);
+  },
+
 });
+function createHorizontalScroll(offset = 0) {
+  gsap.to(container, {
+    x: () => -(container.scrollWidth - window.innerWidth + offset) + "px",
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".store",
+      start: "top top",
+      end: () => "+=" + container.scrollWidth + "px",
+      scrub: true,
+      pin: true,
+      anticipatePin: 1,
+    },
+  });
+}
