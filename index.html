@@ -24,33 +24,41 @@
     <!-- Home -->
     <section class="home" id="home">
       <header class="navbar">
-        <nav class="navbar" id="navbar">
-          <a href="#home" class="home-navbar" id="home-navbar"></a>
-          <a href="#store" class="store-navbar" id="store-navbar"></a>
-          <a href="#test" class="test-navbar" id="test-navbar"></a>
-          <a href="#about" class="about-navbar" id="about-navbar"></a>
-          <a href="#contact" class="contact-navbar" id="contact-navbar"></a>
-          <div>
-            <button onclick="setLanguage('en')">English</button>
-            <button onclick="setLanguage('fr')">Français</button>
-            <button onclick="setLanguage('de')">Deutsch</button>
+        <div class="logo">Zaki</div>
+        <div class="right-items">
+          <input type="text" placeholder="Search..." class="search-input" />
+          <div class="dropdown">
+            <button class="dropbtn">Lan</button>
+            <div class="dropdown-content">
+              <button onclick="setLanguage('en')">English</button>
+              <button onclick="setLanguage('fr')">Français</button>
+              <button onclick="setLanguage('de')">Deutsch</button>
+            </div>
           </div>
-        </nav>
-        <div class="background"></div>
-        <div class="home content" id="home content">
-          <img
-            class="princess"
-            id="princess"
-            src="photo/wallpaper/ea9af7cc-7c9a-40f1-b565-c84212dab42f_removalai_preview.png"
-            alt=""
-          />
-          <img id="quote" class="quote"   src="photo/wallpaper/quote.png" alt="" />
-          <h1 class="book-store" id="book-store"></h1>
-          <h3 class="second-title" id="second-title"></h3>
-          <p class="text" id="text"></p>
-          <p class="quete"></p>
+          <button class="hamburger" id="hamburger">&#9776;</button>
+          <nav class="navbarr" id="navbarr">
+            <a href="#home" class="home-navbar" id="home-navbar"></a>
+            <a href="#store" class="store-navbar" id="store-navbar"></a>
+            <a href="#test" class="test-navbar" id="test-navbar"></a>
+            <a href="#about" class="about-navbar" id="about-navbar"></a>
+            <a href="#contact" class="contact-navbar" id="contact-navbar"></a>
+          </nav>
         </div>
       </header>
+      <div class="background"></div>
+      <div class="home content" id="home content">
+        <img
+          class="princess"
+          id="princess"
+          src="photo/wallpaper/ea9af7cc-7c9a-40f1-b565-c84212dab42f_removalai_preview.png"
+          alt=""
+        />
+        <img id="quote" class="quote" src="photo/wallpaper/quote.png" alt="" />
+        <h1 class="book-store" id="book-store"></h1>
+        <h3 class="second-title" id="second-title"></h3>
+        <p class="text" id="text"></p>
+        <p class="quete"></p>
+      </div>
     </section>
     <!-- Store -->
     <section class="store" id="store">
@@ -72,6 +80,7 @@
     <section class="about" id="about"></section>
     <!-- contact -->
     <section class="contact" id="contact"></section>
+
     <!-- JS -->
     <script src="main.js"></script>
     <script src="dinamic pages/home.js"></script>

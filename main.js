@@ -52,9 +52,10 @@ function updateTexts() {
   document.getElementById("test-navbar").textContent = langData["test-navbar"];
   document.getElementById("about-navbar").textContent =langData["about-navbar"];
   document.getElementById("contact-navbar").textContent =langData["contact-navbar"];
-  document.getElementById("book-store").textContent =langData["book-store"];
   document.getElementById("second-title").textContent =langData["second-title"];
   document.getElementById("text").textContent =langData["text"];
 
 }
 setLanguage("en");
+
+

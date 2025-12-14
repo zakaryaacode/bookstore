@@ -1,35 +1,41 @@
-@media(max-width:480px){
-    .background {
-  background-image: url("../photo/wallpaper/phone.png");
-}
-}
 @media screen and (max-width: 780px) {
   .princess {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
   }
+
+  .quote {
+    display: none;
+  }
 }
+
 @media (max-width: 479px) {
+  .background {
+    background-image: url("../photo/wallpaper/phone.png");
+  }
+
   .princess {
     max-width: 150%;
-      right: 0;
+    right: 0;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
   .princess {
     max-width: 130%;
-      right: 0;
+    right: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) { 
+
+@media (min-width: 768px) and (max-width: 1023px) {
   .princess {
     max-width: 120%;
     right: 7%;
   }
 }
-@media (min-width: 1024px) { 
+
+@media (min-width: 1024px) {
   .princess {
     max-width: 100%;
   }
