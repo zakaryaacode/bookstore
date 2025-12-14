@@ -3,3 +3,34 @@
   background-image: url("../photo/wallpaper/phone.png");
 }
 }
+@media screen and (max-width: 780px) {
+  .home.content img {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+}
+@media (max-width: 479px) {
+  .home.content img {
+    max-width: 150%;
+      right: 0;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .home.content img {
+    max-width: 130%;
+      right: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) { 
+  .home.content img {
+    max-width: 120%;
+    right: 7%;
+  }
+}
+@media (min-width: 1024px) { 
+  .home.content img {
+    max-width: 100%;
+  }
+}
