@@ -1,0 +1,5 @@
+@media(max-width:480px){
+    .background {
+  background-image: url("../photo/wallpaper/phone.png");
+}
+}

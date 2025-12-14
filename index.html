@@ -24,15 +24,25 @@
     <!-- Home -->
     <section class="home" id="home">
       <header class="navbar">
-        <nav>
-          <a href="#home"></a>
-          <a href="#store">Store</a>
-          <a href="#test">Book Test</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+        <nav class="navbar" id="navbar">
+          <a href="#home" class="home-navbar" id="home-navbar"></a>
+          <a href="#store" class="store-navbar" id="store-navbar"></a>
+          <a href="#test" class="test-navbar" id="test-navbar"></a>
+          <a href="#about" class="about-navbar" id="about-navbar"></a>
+          <a href="#contact" class="contact-navbar" id="contact-navbar"></a>
+          <div>
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('fr')">Français</button>
+            <button onclick="setLanguage('de')">Deutsch</button>
+          </div>
         </nav>
-            <img src="photo/wallpaper/ea9af7cc-7c9a-40f1-b565-c84212dab42f_removalai_preview.png" alt="">
-            <div class="background"></div>
+        <div class="background"></div>
+        <div class="home content" id="home content">
+          <img
+            src="photo/wallpaper/ea9af7cc-7c9a-40f1-b565-c84212dab42f_removalai_preview.png"
+            alt=""
+          />
+        </div>
       </header>
     </section>
     <!-- Store -->
@@ -50,7 +60,6 @@
     </section>
     <!-- Test -->
     <section class="test" id="test"></section>
-  
 
     <!-- about -->
     <section class="about" id="about"></section>
