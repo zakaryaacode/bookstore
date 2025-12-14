@@ -14,6 +14,12 @@
     --sb-track-color: transparent;
     --sb-thumb-color: rgba(0, 255, 255, 0.87);
     --sb-size: 13px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  body.loaded {
+    opacity: 1;
   }
 
   body::-webkit-scrollbar {

@@ -16,9 +16,9 @@
   height: 100vh;
   overflow: hidden;
 }
-.home.content img {
+.princess {
   position: absolute;
-  max-width: 100%; /* يمكنك تعديل الحجم */
+  max-width: 100%; 
   height: auto;
   bottom: 0;
   right: 11%;
@@ -28,5 +28,17 @@
         drop-shadow(0 0 15px brown) 
         drop-shadow(0 0 20px white);
 }
+.quote{
+ position: absolute;
+ max-width: 25%; 
+  height: auto;
+  bottom: 10%;
+  left: 5%;
+  object-fit: cover;
+  filter: 
+        drop-shadow(0 0 10px yellow) 
+        drop-shadow(0 0 15px brown) 
+        drop-shadow(0 0 20px white);
 
+}
 
