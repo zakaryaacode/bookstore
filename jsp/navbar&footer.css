@@ -8,8 +8,10 @@
     padding: 0 20px;
 
 }
-.navbarr{
-   
+.navbarr a{
+     
+     gap: 20px;
+     padding: 10 20px;
      background-color: rgb(255, 0, 0);
 
 }
